@@ -1,6 +1,6 @@
 {
   "name": "nepal-map-basins",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "dist/nepal-map-basins.ssr.js",
   "browser": "dist/nepal-map-basins.esm.js",
@@ -48,5 +48,9 @@
   },
   "engines": {
     "node": ">=12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gritfeat-Solutions/geo-nepal-basins.git"
   }
 }
