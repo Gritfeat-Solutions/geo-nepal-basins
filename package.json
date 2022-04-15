@@ -1,5 +1,5 @@
 {
-  "name": "@Gritfeat-Solutions/geo-nepal-basins",
+  "name": "nepal-map-basins",
   "version": "0.0.3",
   "description": "",
   "main": "dist/nepal-map-basins.ssr.js",
