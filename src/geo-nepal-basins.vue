@@ -3,7 +3,7 @@
     href="https://fonts.googleapis.com/css2?family=Material+Icons"
     rel="stylesheet"
   />
-  <div id="map">
+  <div id="map" :style="{ height: height + 'vh', width: width + 'vw' }">
     <button @click="goBack()" class="back-btn">
       <span class="material-icons"> arrow_back_ios </span>
     </button>
@@ -15,6 +15,18 @@ import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 export default {
   name: "App",
+  props: {
+    height: {
+      type: Number,
+      default: 98,
+      required: false,
+    },
+    width: {
+      type: Number,
+      default: 98,
+      required: false,
+    },
+  },
   components: {},
   data() {
     return {
@@ -27,7 +39,11 @@ export default {
     };
   },
   async mounted() {
-    this.basinsMap = L.map("map");
+    this.basinsMap = L.map("map", {
+      scrollWheelZoom: false,
+      touchZoom: false,
+      doubleClickZoom: false,
+    });
     L.tileLayer(
       "https://cartodb-basemaps-{s}.global.ssl.fastly.net/rastertiles/voyager/{z}/{x}/{y}.png"
     ).addTo(this.basinsMap);
@@ -160,11 +176,6 @@ export default {
 </script>
 
 <style>
-#map {
-  width: 100%;
-  height: 100%;
-}
-
 .leaflet-container {
   background: #fff;
 }

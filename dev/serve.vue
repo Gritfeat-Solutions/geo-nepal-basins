@@ -1,17 +1,17 @@
 <script>
-import { defineComponent } from 'vue';
-import NepalMapBasins from '@/nepal-map-basins.vue';
+import { defineComponent } from "vue";
+import GeoNepalBasins from "@/geo-nepal-basins.vue";
 
 export default defineComponent({
-  name: 'ServeDev',
+  name: "ServeDev",
   components: {
-    NepalMapBasins
-  }
+    GeoNepalBasins,
+  },
 });
 </script>
 
 <template>
   <div id="app">
-    <nepal-map-basins />
+    <GeoNepalBasins :height="50" :width="50" />
   </div>
 </template>

@@ -1,6 +1,6 @@
 
 // Import vue component
-import component from '@/nepal-map-basins.vue';
+import component from '@/geo-nepal-basins.vue';
 
 // Default export is installable instance of component.
 // IIFE injects install function into component, allowing component
@@ -11,7 +11,7 @@ export default /*#__PURE__*/(() => {
 
   // Attach install function executed by Vue.use()
   installable.install = (app) => {
-    app.component('NepalMapBasins', installable);
+    app.component('GeoNepalBasins', installable);
   };
   return installable;
 })();
