@@ -1,7 +1,7 @@
 {
-  "name": "nepal-map-basins",
-  "version": "0.0.3",
-  "description": "",
+  "name": "vue-nepal-basins-geojson",
+  "version": "1.0.4",
+  "description": "A packaged geojson map using leaflet for rendering basins and sub basins of Nepal.",
   "main": "dist/nepal-map-basins.ssr.js",
   "browser": "dist/nepal-map-basins.esm.js",
   "module": "dist/nepal-map-basins.esm.js",
@@ -52,5 +52,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/Gritfeat-Solutions/geo-nepal-basins.git"
+  },
+  "license": "(MIT OR Apache-2.0)",
+  "author": {
+    "name": "Sonika Maharjan",
+    "email": "sonikamaharjan95@gmail.com"
   }
 }
