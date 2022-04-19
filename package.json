@@ -1,6 +1,6 @@
 {
   "name": "vue-nepal-basins-geojson",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A packaged geojson map using leaflet for rendering basins and sub basins of Nepal.",
   "main": "dist/nepal-map-basins.ssr.js",
   "browser": "dist/nepal-map-basins.esm.js",
